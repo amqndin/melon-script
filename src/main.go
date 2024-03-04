@@ -4,7 +4,6 @@ import (
 	"bufio"
 	"fmt"
 	"os"
-	// "strings"
 )
 
 func main() {
@@ -20,9 +19,6 @@ func main() {
 			fmt.Println("Error reading input:", err)
 			break // Exit loop on error
 		}
-
-		// Remove trailing newline character
-		// input = strings.TrimSuffix(input, "\n")
 
 		// Print back the user's input
 		fmt.Println(input)
