@@ -26,3 +26,9 @@ jobs:
 
     - name: Test
       run: go test -o ./bin/melonscript -v ./...
+
+    - name: Upload Artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: artifact
+        path: ./bin/melonscript
