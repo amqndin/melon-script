@@ -7,7 +7,6 @@ import (
 )
 
 func main() {
-
 	reader := bufio.NewReader(os.Stdin)
 
 	for true {
@@ -20,7 +19,10 @@ func main() {
 			break // Exit loop on error
 		}
 
+		if input == "exit\n" {
+			break
+		}
 		// Print back the user's input
-		fmt.Println(input)
+		fmt.Printf(input)
 	}
 }
