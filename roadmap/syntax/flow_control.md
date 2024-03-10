@@ -7,7 +7,7 @@ for $i = 0; $i < 10; $i++ {
 $i = 5;
 
 // while loop
-while $i == 5 {
+for $i == 5 {
     std.tellraw(@a, f"print {$i}")
     $i--;
 }
